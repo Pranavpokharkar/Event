@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+        <title>Dance Competetion</title>
+        <link rel="stylesheet" type="text/css" href="dancestyle.css">
+</head>
+<body >
+    <div class="main">
+        <div class="header">
+             <div class="logo">
+                <img src="logo1.jpg">
+             </div>
+             <div class="title">
+                    Dance competetion
+             </div>
+        </div>
+     </div>
+     <div class="nav">
+     <ul>
+          <li><input type="button" value="HOME" id="btn1" ></li>
+          <li><input type="button" value="REGISTRATION" id="btn2" ></li>
+          <li><input type="button" value="SHOW REGISTRATION" id="btn3"></li>
+     </ul>
+    </div>
+   <div id="content" >
+	<h2>Welcome to Firodiya Dance Competetion</h2>
+   </div>
+
+   <div id="content2" style="display: none;">
+     <form id="form" name="myform" method="post" onSubmit="return validateForm()">
+         <br><br>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" size="47"><br>
+          <span id="nam1"></span><br>
+          
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" size="47"><br>
+          <span id="emal"></span><br>
+          
+          <label for="mnum">Mobile no:</label><br>
+          <input type="text" id="mnum" name="mnum" size="47"><br>
+          <span id="mno"></span><br>
+          
+          <label for="age">Age:</label><br>
+          <input type="text" id="age" name="age" size="47"><br>
+          <span id="age1"></span><br>
+          
+          <label for="dan">Dance:</label><br>
+          <input type="radio" id="solo" name="type" value="Solo">
+          <label for="type">Solo</label><br>
+          <input type="radio" id="group" name="type" value="Group">
+          <label for="type">Group</label><br>
+          <span id="dan1"></span><br>
+          
+          <label for="nom">No of Members:</label><br>
+          <input type="text" id="nom" name="nom" size="47"><br>
+          <span id="nom1"></span><br>
+          
+          <label for="dtype">Dance type:</label><br>
+          <select id="dtype" name="dtype">
+          <option value="ballet">Ballet</option>
+          <option value="bharatnatyam">Bharatnatyam</option>
+          <option value="kathak">Kathak</option>
+          <option value="breakdance">Break Dance</option>
+          </select><br>
+          <span id="dtype1"></span><br>
+          
+          <label for="comment">Comment:</label><br>
+          <textarea name="comment" rows="8" cols="44"></textarea><br>
+          <span id="comment1"></span><br>
+          
+          <input type="checkbox" id="agree" name="agree" value="agree" >
+          <label for="agree"> I agree all the conditions.</label><br><br>
+          <span id="agree1"></span><br>
+          <input id="subm" type="submit" value="submit"><br><br><br>
+     </form>
+   </div>
+   <div id="content3" style="display: none;">
+        hello
+   </div>
+   <script src="javascript.js"></script>
+</body>
+</html>
