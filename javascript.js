@@ -139,7 +139,7 @@ function validateForm()
             document.getElementById("agree1").innerHTML="Please accept all the conditions";
             return false;
          }
-         else
+         else if 
          {
            var list1=[];
            var list2=[];
@@ -154,16 +154,16 @@ function validateForm()
            var x=0;
            
            
-                var AddRown=document.getElementById('show');
+                var AddRown=document.getElementById("show");
                 var NewRow=AddRown.insertRow(n);
                 
-                list1[x]=document.getElementById("fname").value;
+                list1[x]=document.getElementById("name").value;
                 list2[x]=document.getElementById("email").value;
-                list3[x]=document.getElementById("mno").value;
+                list3[x]=document.getElementById("mnum").value;
                 list4[x]=document.getElementById("age").value;
-                list5[x]=document.getElementById("dan").value;
+                list5[x]=document.myform.type.value;
                 list6[x]=document.getElementById("nom").value;
-                list7[x]=document.getElementById("dtype").value;
+                list7[x]=document.myform.dtype.value;
                 list8[x]=document.getElementById("comment").value;
                 
                 var cel1=NewRow.insertCell(0);
@@ -186,6 +186,8 @@ function validateForm()
                 
                 n++;
                 x++;
+            
+               document.getElementById("submit").innerHTML=alert("submitted");
            
          }
     }
