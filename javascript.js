@@ -153,7 +153,7 @@ function validateForm()
            var n=1;
            var x=0;
            
-           function AddRow(){
+           
                 var AddRown=document.getElementById('show');
                 var NewRow=AddRown.insertRow(n);
                 
@@ -186,6 +186,6 @@ function validateForm()
                 
                 n++;
                 x++;
-           }
+           
          }
     }
