@@ -27,7 +27,7 @@
    </div>
 
    <div id="content2" style="display: none;">
-     <form id="form" name="myform" method="post" onSubmit="return validateForm()">
+     <form id="form" name="myform">
          <br><br>
           <label for="name">Name:</label><br>
           <input type="text" id="name" name="name" size="47"><br>
@@ -72,7 +72,7 @@
           <input type="checkbox" id="agree" name="agree" value="agree" >
           <label for="agree"> I agree all the conditions.</label><br><br>
           <span id="agree1"></span><br>
-          <input id="subm" type="submit" value="submit"><br><br><br>
+          <input id="subm" type="submit" value="submit" onclick="validateForm()"><br><br><br>
      </form>
    </div>
    <div id="content3" style="display: none;">
